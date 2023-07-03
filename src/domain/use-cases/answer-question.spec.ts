@@ -5,8 +5,8 @@ test('create an answer', () => {
   const answerQuestionUseCase = new AnswerQuestionUseCase();
 
   const { answer } = answerQuestionUseCase.execute({ 
-    instructorId: '',
-    questionId: '',
+    instructorId: '1',
+    questionId: '1',
     content: 'Nova resposta'
   })
 
