@@ -19,7 +19,7 @@ describe('Choose Question Best Answer', () => {
     )
   })
 
-  it.skip('should be able to choose the question best answer', async () => {
+  it('should be able to choose the question best answer', async () => {
     const question = makeQuestion()
     const answer = makeAnswer({
       questionId: question.id,
