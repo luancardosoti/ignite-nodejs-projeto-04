@@ -55,3 +55,31 @@ Design dirigido à domínio
 - Adicionar um novo anexo (create)
 - Remover o segudo anexo que tinha sido criado previamente (delete)
 - Editar um anexo existente (update)
+
+# Subdomínios
+
+- Core: O que dá dinheiro 
+- Supporting: Dá suporte para o core funcionar
+- Generic: Você precisa, mas não são tão importantes
+
+- Vantagens (micro-serviços)
+
+## exemplos
+
+### Subdomínios Core de um E-commerce 
+
+- Compra
+- Catálogo
+- Pagamento
+- Entrega
+- Faturamento
+
+### Subdomínios Supporting de um E-commerce 
+
+- Estoque
+
+### Subdomínios Generic de um E-commerce 
+
+- Notificação ao cliente
+- Promoções
+- Chat
