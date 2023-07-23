@@ -1,9 +1,14 @@
 import { DomainEvents } from '@/core/events/domain-events'
 import { EventHandler } from '@/core/events/event-handler'
+import { QuestionsRepository } from '@/domain/forum/application/repositories/question-repository'
 import { AnswerCreatedEvent } from '@/domain/forum/enterprise/events/answer-created-event'
+import { SendNotificationUseCase } from '../use-cases/send-notification'
 
 export class OnAnswerCreated implements EventHandler {
-  constructor() {
+  constructor(
+    private questionsRepository: QuestionsRepository,
+    private sendNotificationUseCase: SendNotificationUseCase,
+  ) {
     this.setupSubscriptions()
   }
 
@@ -18,7 +23,18 @@ export class OnAnswerCreated implements EventHandler {
     answer,
     ocurredAt,
   }: AnswerCreatedEvent) {
-    console.log(answer)
-    console.log(ocurredAt)
+    const question = await this.questionsRepository.findById(
+      answer.questionId.toString(),
+    )
+
+    if (question) {
+      await this.sendNotificationUseCase.execute({
+        recipientId: question.authorId.toString(),
+        title: `Nova resposta em ${question.title
+          .substring(0, 40)
+          .concat('...')}`,
+        content: answer.excerpt,
+      })
+    }
   }
 }
