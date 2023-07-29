@@ -1,3 +1,9 @@
+# Curso Ignite Nodejs
+
+## Projeto 04 - DDD no Node.js
+
+Nesse quarto módulo o foco foi desenvolver uma aplicação de fórum zero aplicando os conceitos de Clean Architecture. O foco desde de o começo foi construir os casos de uso de aplicação com testes e de maneira totalmente desaclopada de ferramentas, focando apenas no domínio da aplicação. Utilizei conceitos como Value Objects, lidar com erro de forma funcional, Aggregates, Watched Lists, Subdomínios e Domain Events.
+
 # DDD (Domain-driven Design)
 
 Design dirigido à domínio
@@ -6,7 +12,6 @@ Design dirigido à domínio
 
 - Domain Experts
   - Conversa
-  - 
 - Linguagem ubíqua
 
 - Usuário
