@@ -2,7 +2,7 @@
 
 ## Projeto 04 - DDD no Node.js
 
-Nesse quarto módulo o foco foi desenvolver uma aplicação de fórum zero aplicando os conceitos de Clean Architecture e DDD. O foco desde de o começo foi construir os casos de uso de aplicação com testes e de maneira totalmente desaclopada de ferramentas, focando apenas no domínio da aplicação. Utilizei conceitos como Value Objects, lidar com erro de forma funcional, Aggregates, Watched Lists, Subdomínios e Domain Events.
+Nesse quarto módulo o foco foi desenvolver uma aplicação de fórum do zero aplicando os conceitos de Clean Architecture e DDD. Desde de o começo foi construído os casos de uso da aplicação com testes e de maneira totalmente desacoplada de ferramentas, focando apenas no domínio da aplicação. Utilizei conceitos como Value Objects, lidar com erro de forma funcional, Aggregates, Watched Lists, Subdomínios, Domain Events, etc.
 
 # DDD (Domain-driven Design)
 
